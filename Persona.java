@@ -19,10 +19,10 @@ public class Persona {
     private String tipoSangre;
     private String rh;
 
-    /**
+    /**Constructor
      * <b>Objetivo:</b> Crear una persona con todos sus datos.<br>
-     * <b>Precondición:</b> Recibir valores válidos para cada atributo.<br>
-     * <b>Poscondición:</b> Se inicializa un objeto Persona con los datos proporcionados.
+     * <b>Precondición:</b> Recibir valores correctos para cada dato. <br>
+     * <b>Poscondición:</b> La persona queda guardado con esos datos.<br>
      */
     public Persona(String tipoDoc, int numeroDoc, String primerNombre, String segundoNombre,
                    String primerApellido, String segundoApellido, int diaNac, int mesNac, int anioNac,
@@ -46,10 +46,7 @@ public class Persona {
         this.tipoSangre = tipoSangre;
         this.rh = rh;
     }
-
-    // --- Getters con documentación ---
-
-    /**
+    /**Analizador
      * <b>Objetivo:</b> Obtener el tipo de documento.<br>
      * <b>Precondición:</b> El objeto Persona debe estar creado.<br>
      * <b>Poscondición:</b> Retorna el tipo de documento.
@@ -168,7 +165,7 @@ public class Persona {
      */
     public String getRh() { return this.rh; }
 
-    // --- Setters con documentación ---
+    // Modificador 
 
     /**
      * <b>Objetivo:</b> Modificar el tipo de documento.<br>
