@@ -5,23 +5,23 @@
 public class Persona {
 
     // Atributos
-    private String tipoDoc;
-    private int numeroDoc;
-    private String primerNombre;
-    private String segundoNombre;
-    private String primerApellido;
-    private String segundoApellido;
-    private int diaNac;
-    private int mesNac;
-    private int anioNac;
-    private String genero;
-    private String estadoCivil;
-    private String numCelular;
-    private String nacionalidad;
-    private String direccion;
-    private String correo;
-    private String tipoSangre;
-    private String rh;
+    protect String tipoDoc;
+    protect int numeroDoc;
+    protect String primerNombre;
+    protect String segundoNombre;
+    protect String primerApellido;
+    protect String segundoApellido;
+    protect int diaNac;
+    protect int mesNac;
+    protect int anioNac;
+    protect String genero;
+    protect String estadoCivil;
+    protect String numCelular;
+    protect String nacionalidad;
+    protect String direccion;
+    protect String correo;
+    protect String tipoSangre;
+    protect String rh;
 
     // CONSTRUCTORES
     
