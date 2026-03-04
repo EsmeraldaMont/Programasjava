@@ -1,0 +1,18 @@
+public class Usuario {
+    
+    /**
+     * <b>Objetivo:</b> Probar que la clase Usuario funciona correctamente.<br>
+     * <b>Precondición:</b> La clase Usuario debe estar creada y lista para usar.<br>
+     * <b>Poscondición:</b> Se crean varios Usuario, se modifican y se muestran sus datos en pantalla para verificar que todo funciona.<br>
+     */
+    public static void main(String[] args) {
+        
+        // Crear Usuario 1 con constructor vacío
+        Usuario p1 = new Usuario();
+        
+        // Crear Usuario 2 con constructor de un parámetros (username
+        Usuario p2 = new Usuario ("username");
+
+        // Crear Usuario 2 con constructor de dos parámetros (usuername y password)
+        Usuario p2 = new Usuario("username", gaticas123);
+        
