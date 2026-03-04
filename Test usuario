@@ -10,9 +10,22 @@ public class Usuario {
         // Crear Usuario 1 con constructor vacío
         Usuario p1 = new Usuario();
         
-        // Crear Usuario 2 con constructor de un parámetros (username
-        Usuario p2 = new Usuario ("username");
+        // Crear Usuario 2 con constructor de un parámetros (username)
+        Usuario p2 = new Usuario ("gaticas123");
 
         // Crear Usuario 2 con constructor de dos parámetros (usuername y password)
-        Usuario p2 = new Usuario("username", gaticas123);
+        Usuario p2 = new Usuario("gaticas123", "#Colombia123");
+
+    }
+
+        System.out.println("Datos del usuario\n");
+        System.out.println("Los datos del usuario son:\n" + p1.toString() + "\n");
+
+       // Modificar persona 1 usando setters
+       System.out.println("Modificar datos con setters\n");
+
+       p1.setusername("gaticas123");
+       p1.setpassword("#Colombia123");
         
+
+}
