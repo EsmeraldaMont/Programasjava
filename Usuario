@@ -1,0 +1,49 @@
+public class Usuario {
+
+// Atributos 
+
+protected String username;
+protected String password;
+
+// Constructor
+
+/**
+ * <b>Objetivo:</b> Crear un usuario con sus atributos inicializados.<br>
+ * <b>Precondición:</b> No se necesita ningun dato previo.<br>
+ * <b>Poscondición:</b> Crear el usuario con los datos vacios.<br>
+ **/
+
+public Usuario() {
+    this.username ="";
+    this.password ="";
+}
+
+/**
+ * <b>Objetivo:</b> Crear un usuario con su usuario y contraseña.<br>
+ * <b>Precondición:</b> Se debe proporcionar un usuario y contraseña.<br>
+ * <b>Poscondición:</b> Se crea el usuario y su contraseña
+ * @param username, es el nombre de usuario con el que se ingresara
+ * @param password, contraseña con diferentes simbolos, letras y numeros que asignara el usuario.<br>
+ **/
+
+public Usuario(String username, String password) {
+    this.username ="Gatica123";
+    this.password ="#Colombia123";
+}
+
+ /**
+     * <b>Objetivo:</b> Mostrar los datos creados tanto usuario como contraseña.<br>
+     * <b>Precondición:</b> El objeto usuario debe estar creado.<br>
+     * <b>Poscondición:</b> Se entrega un texto organizado con toda la información del usuario.<br>
+     * @return Un texto con todos los datos del usuario, uno por línea.
+     */
+
+@Override
+public String toString() {
+    String s = "";    
+     s += "username:" + this.username+"\n";
+     s += "password:" + this.password + "\n";
+    return s;
+}
+
+}
