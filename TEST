@@ -1,0 +1,39 @@
+public class Testvehiculo {
+    public static void main(String[] args) {
+        
+     /**
+     * <b>Objetivo:</b> Probar que la clase vehiculo funciona correctamente.<br>
+     * <b>Precondición:</b> La clase vehiculo debe estar creada y lista para usar.<br>
+     * <b>Poscondición:</b> Se crean varias vehiculos, se modifican y se muestran sus datos en pantalla para verificar que todo funciona.<br>
+     */
+
+        Vehiculo v1 = new Vehiculo("UUY321", "Toyota", "Azul");
+        Vehiculo v2 = new Vehiculo("OLA678", "Yamaha", "Rojo");
+        Vehiculo v3 = new Vehiculo("KYD147", "Scania", "Negro");
+
+        // 2. Mostrar datos iniciales usando toString()
+        System.out.println("Vehiculo");
+        System.out.println("Vehículo 1: " + v1.toString());
+        System.out.println("Vehículo 2: " + v2.toString());
+        System.out.println("Vehículo 3: " + v3.toString());
+
+        System.out.println("\n- probando set y get");
+
+        // 3. Usar Getters 
+        System.out.println("Placa actual: " + v1.getplaca());
+        System.out.println("Marca actual: " + v1.getmarca());
+
+        // 4. Usar Setter para modificar la marca
+        v1.setMarca("Mazda");
+        v1.setColor("Gris");
+
+        // 5.
+        System.out.println("Nueva marca después del set: " + v1.getmarca());
+        System.out.println("Nuevo color después del set: " + v1.getcolor());
+        
+        System.out.println("\n--Estado final con modificacion-");
+        System.out.println(v1.toString());
+    }
+}
+
+
