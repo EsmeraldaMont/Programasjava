@@ -1,0 +1,63 @@
+public class Vehiculo {
+
+    // Atributos
+    private String marca;
+    private String modelo;
+    private int anio;
+
+    // Constructor
+    public Vehiculo(String marca, String modelo, int anio) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.anio = anio;
+    }
+
+    // Método modificador (set)
+    public void setMarca(String nuevaMarca) {
+        marca = nuevaMarca;
+    }
+
+    // Método analizador (get)
+    public String getMarca() {
+        return marca;
+    }
+
+    // Método modificador
+    public void setModelo(String nuevoModelo) {
+        modelo = nuevoModelo;
+    }
+
+    // Método analizador
+    public String getModelo() {
+        return modelo;
+    }
+
+    // Método modificador
+    public void setAnio(int nuevoAnio) {
+        anio = nuevoAnio;
+    }
+
+    // Método analizador
+    public int getAnio() {
+        return anio;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Vehiculo carro = new Vehiculo("Toyota", "Corolla", 2020);
+
+        System.out.println(carro.getMarca());
+        System.out.println(carro.getModelo());
+        System.out.println(carro.getAnio());
+
+        carro.setMarca("Mazda");
+
+        System.out.println(carro.getMarca());
+    }
+}
+
+
+
+
