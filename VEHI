@@ -1,0 +1,93 @@
+public class Vehiculo {
+    // Atributos
+    protected String placa;
+    protected String marca;
+    protected String color;
+
+    // Constructor
+
+    /**
+     * <b>Objetivo:</b> Crear una vehiculo con sus caracteristicas básicas: placa, marca y modelo.<br>
+     * <b>Precondición:</b> Se debe proporcionar placa, marca y color válidos.<br>
+     * <b>Poscondición:</b> Se crea un vehiculo con los datos básicos asignados, los demás atributos quedan vacíos.<br>
+     * @param placa, es la placa del vehiculo (123ABC).
+     * @param marca, es la marca del vehiculo (Mazda, Volswagen, Mercedes)
+     * @param color, es el color( azul, negro, rojo).
+     **/
+    public Vehiculo(String placa, String marca, String color) {
+        this.placa = placa;
+        this.marca = marca;
+        this.color = color;
+    }
+
+    // ANALIZADORES (GETTERS)
+
+    /**
+     * <b>Objetivo:</b> Obtener la placa.<br>
+     * <b>Precondición:</b> El objeto Vehiculo debe estar creado.<br>
+     * <b>Poscondición:</b> Retorna la placa de Vehiculo.
+     * @return placa String.
+     **/
+    public String getPlaca() { return placa; }
+
+    /**
+     * <b>Objetivo:</b> Obtener la marca.<br>
+     * <b>Precondición:</b> El objeto Vehiculo debe estar creado.<br>
+     * <b>Poscondición:</b> Retorna la marca del Vehiculo.
+     * <b>Poscondición:</b> Soy Esmeralda
+     * @return marca String.
+     **/
+    public String getMarca() { return marca; }
+
+    /**
+     * <b>Objetivo:</b> Obtener la color.<br>
+     * <b>Precondición:</b> El objeto Vehiculo debe estar creado.<br>
+     * <b>Poscondición:</b> Retorna el color del Vehiculo.
+     * @return marca String.
+     **/
+    public String getColor() { return color; }
+
+
+    // MODIFICADORES (SETTERS)
+
+    /**
+     * <b>Objetivo:</b> Modifica la placa.<br>
+     * <b>Precondición:</b> Recibir un valor válido para placa.<br>
+     * <b>Poscondición:</b> El atributo placa se actualiza con el nuevo valor.
+     * @param placa, es la nueva placa.
+     **/
+    public void setPlaca(String placa) { this.placa = placa; }
+
+    /**
+     * <b>Objetivo:</b> Modifica marca.<br>
+     * <b>Precondición:</b> Recibir un valor válido para marca.<br>
+     * <b>Poscondición:</b> El atributo marca se actualiza con el nuevo valor.
+     * @param marca, es la nueva marca.
+     **/
+    public void setMarca(String marca) { this.marca = marca; }
+
+    /**
+     * <b>Objetivo:</b> Modifica color.<br>
+     * <b>Precondición:</b> Recibir un valor válido para color.<br>
+     * <b>Poscondición:</b> El atributo color se actualiza con el nuevo valor.
+     * @param color, es la nueva marca.
+     **/
+    public void setColor(String color) { this.color = color; }
+
+    // ToString
+
+    /**
+     * <b>Objetivo:</b> Mostrar todos los datos del vehiculo en formato de texto.<br>
+     * <b>Precondición:</b> El objeto vehiculo debe estar creado.<br>
+     * <b>Poscondición:</b> Se entrega un texto organizado con toda la información del vehiculo.<br>
+     * @return Un texto con todos los datos del vehiculo, uno por línea.
+     */
+    @Override
+    public String toString() {
+        String s = "";
+        s += "placa: " + this.placa + "\n";
+        s += "marca: " + this.marca + "\n";
+        s += "color: " + this.color + "\n";
+        return s;
+    }
+}
