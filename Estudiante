@@ -1,0 +1,52 @@
+public class Estudiante extends Persona {
+    // Atributos
+    protected String carrera;
+    protected double promedio;
+    protected int semestre;
+
+ // Constructor
+
+
+
+ 
+    public Estudiante(String carrera, double promedio, int semestre, String tipoDoc, int numeroDoc, String primerNombre, String segundoNombre,
+      String primerApellido, String segundoApellido, int diaNac, int mesNac, int anioNac, String genero, String estadoCivil, String numCelular,
+      String nacionalidad, String direccion,String correo, String tipoSangre, String rh) {
+
+    super(tipoDoc, numeroDoc,primerNombre,segundoNombre, primerApellido,segundoApellido, diaNac, mesNac, anioNac,
+       genero, estadoCivil, numCelular, nacionalidad, direccion, correo, tipoSangre, rh); 
+
+    this.carrera = carrera;
+    this.promedio = promedio;
+    this.semestre = semestre;
+}
+
+// ANALIZADORES (GETTERS)
+
+    public String getcarrera() { Sreturn carrera;}
+
+    public double getpromedio() { return promedio;}
+
+    public int getsemestre() { return semestre;}
+
+
+
+// MODIFICADORES (SETTERS)
+
+     public void setcarrera(String carrera) { this.carrera = carrera; }
+
+     public void setpromedio(double promedio) { this.promedio = promedio; }
+
+     public void setsemestre(int semestre) { this.semestre = semestre; }
+
+
+public String toString() {
+        String s = "";
+        s += "Carrera: " + this.carrera + "\n";
+        s += "Promedio: " + this.numeroDoc + "\n";
+        s += "Semestre " + this.semestre + "\n";
+        return s;
+}
+}
+
+
