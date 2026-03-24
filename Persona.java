@@ -5,25 +5,33 @@
 public class Persona {
 
     // Atributos
-    protect String tipoDoc;
-    protect int numeroDoc;
-    protect String primerNombre;
-    protect String segundoNombre;
-    protect String primerApellido;
-    protect String segundoApellido;
-    protect int diaNac;
-    protect int mesNac;
-    protect int anioNac;
-    protect String genero;
-    protect String estadoCivil;
-    protect String numCelular;
-    protect String nacionalidad;
-    protect String direccion;
-    protect String correo;
-    protect String tipoSangre;
-    protect String rh;
+    protected String tipoDoc;
+    protected int numeroDoc;
+    protected String primerNombre;
+    protected String segundoNombre;
+    protected String primerApellido;
+    protected String segundoApellido;
+    protected int diaNac;
+    protected int mesNac;
+    protected int anioNac;
+    protected String genero;
+    protected String estadoCivil;
+    protected String numCelular;
+    protected String nacionalidad;
+    protected String direccion;
+    protected String correo;
+    protected String tipoSangre;
+    protected String rh;
 
     // CONSTRUCTORES
+
+    public Persona(String tipoDoc, String primerNombre, String primerApellido) {
+    this.tipoDoc = tipoDoc;
+    this.primerNombre = primerNombre;
+    this.primerApellido = primerApellido;
+     }
+
+
     
     /**
      * <b>Objetivo:</b> Crear una persona sin datos, con valores vacíos por defecto.<br>
@@ -159,7 +167,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el tipo de documento.
      * @return tipoDoc String.
      */
-    public String getTipoDoc() { return this.tipoDoc; }
+    public String gettipoDoc() { return this.tipoDoc; }
 
     /**
      * <b>Objetivo:</b> Obtener el número de documento.<br>
@@ -167,7 +175,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el número de documento.
      * @return numeroDoc int.
      */
-    public int getNumeroDoc() { return this.numeroDoc; }
+    public int getnumeroDoc() { return this.numeroDoc; }
 
     /**
      * <b>Objetivo:</b> Obtener el primer nombre.<br>
@@ -175,7 +183,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el primer nombre.
      * @return primerNombre String.
      */
-    public String getPrimerNombre() { return this.primerNombre; }
+    public String getprimerNombre() { return this.primerNombre; }
 
     /**
      * <b>Objetivo:</b> Obtener el segundo nombre.<br>
@@ -183,7 +191,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el segundo nombre.
      * @return segundoNombre String.
      */
-    public String getSegundoNombre() { return this.segundoNombre; }
+    public String getsegundoNombre() { return this.segundoNombre; }
 
     /**
      * <b>Objetivo:</b> Obtener el primer apellido.<br>
@@ -191,7 +199,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el primer apellido.
      * @return primerApellido String.
      */
-    public String getPrimerApellido() { return this.primerApellido; }
+    public String getprimerApellido() { return this.primerApellido; }
 
     /**
      * <b>Objetivo:</b> Obtener el segundo apellido.<br>
@@ -199,7 +207,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el segundo apellido.
      * @return segundoApellido String.
      */
-    public String getSegundoApellido() { return this.segundoApellido; }
+    public String getsegundoApellido() { return this.segundoApellido; }
 
     /**
      * <b>Objetivo:</b> Obtener el día de nacimiento.<br>
@@ -207,7 +215,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el día de nacimiento.
      * @return diaNac int.
      */
-    public int getDiaNac() { return this.diaNac; }
+    public int getdiaNac() { return this.diaNac; }
 
     /**
      * <b>Objetivo:</b> Obtener el mes de nacimiento.<br>
@@ -215,7 +223,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el mes de nacimiento.
      * @return mesNac int.
      */
-    public int getMesNac() { return this.mesNac; }
+    public int getmesNac() { return this.mesNac; }
 
     /**
      * <b>Objetivo:</b> Obtener el año de nacimiento.<br>
@@ -223,7 +231,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el año de nacimiento.
      * @return anioNac int.
      */
-    public int getAnioNac() { return this.anioNac; }
+    public int getanioNac() { return this.anioNac; }
 
     /**
      * <b>Objetivo:</b> Obtener el género.<br>
@@ -231,7 +239,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el género.
      * @return genero String.
      */
-    public String getGenero() { return this.genero; }
+    public String getgenero() { return this.genero; }
 
     /**
      * <b>Objetivo:</b> Obtener el estado civil.<br>
@@ -239,7 +247,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el estado civil.
      * @return estadoCivil String.
      */
-    public String getEstadoCivil() { return this.estadoCivil; }
+    public String getestadoCivil() { return this.estadoCivil; }
 
     /**
      * <b>Objetivo:</b> Obtener el número de celular.<br>
@@ -247,7 +255,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el número de celular.
      * @return numCelular String.
      */
-    public String getNumCelular() { return this.numCelular; }
+    public String getnumCelular() { return this.numCelular; }
 
     /**
      * <b>Objetivo:</b> Obtener la nacionalidad.<br>
@@ -255,7 +263,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna la nacionalidad.
      * @return nacionalidad String.
      */
-    public String getNacionalidad() { return this.nacionalidad; }
+    public String getnacionalidad() { return this.nacionalidad; }
 
     /**
      * <b>Objetivo:</b> Obtener la dirección.<br>
@@ -263,7 +271,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna la dirección.
      * @return direccion String.
      */
-    public String getDireccion() { return this.direccion; }
+    public String getdireccion() { return this.direccion; }
 
     /**
      * <b>Objetivo:</b> Obtener el correo electrónico.<br>
@@ -271,7 +279,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el correo electrónico.
      * @return correo String.
      */
-    public String getCorreo() { return this.correo; }
+    public String getcorreo() { return this.correo; }
 
     /**
      * <b>Objetivo:</b> Obtener el tipo de sangre.<br>
@@ -279,7 +287,7 @@ public class Persona {
      * <b>Poscondición:</b> Retorna el tipo de sangre.
      * @return tipoSangre String.
      */
-    public String getTipoSangre() { return this.tipoSangre; }
+    public String gettipoSangre() { return this.tipoSangre; }
 
     /**
      * <b>Objetivo:</b> Obtener el valor RH.<br>
@@ -339,7 +347,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo primerNombre se actualiza con el nuevo valor.
      * @param primerNombre, es el nuevo primer nombre.
      */
-    public void setPrimerNombre(String primerNombre) { this.primerNombre = primerNombre; }
+    public void setprimerNombre(String primerNombre) { this.primerNombre = primerNombre; }
 
     /**
      * <b>Objetivo:</b> Modificar el segundo nombre.<br>
@@ -347,7 +355,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo segundoNombre se actualiza con el nuevo valor.
      * @param segundoNombre, es el nuevo segundo nombre.
      */
-    public void setSegundoNombre(String segundoNombre) { this.segundoNombre = segundoNombre; }
+    public void setsegundoNombre(String segundoNombre) { this.segundoNombre = segundoNombre; }
 
     /**
      * <b>Objetivo:</b> Modificar el primer apellido.<br>
@@ -355,7 +363,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo primerApellido se actualiza con el nuevo valor.
      * @param primerApellido, es el nuevo primer apellido.
      */
-    public void setPrimerApellido(String primerApellido) { this.primerApellido = primerApellido; }
+    public void setprimerApellido(String primerApellido) { this.primerApellido = primerApellido; }
 
     /**
      * <b>Objetivo:</b> Modificar el segundo apellido.<br>
@@ -363,7 +371,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo segundoApellido se actualiza con el nuevo valor.
      * @param segundoApellido, es el nuevo segundo apellido.
      */
-    public void setSegundoApellido(String segundoApellido) { this.segundoApellido = segundoApellido; }
+    public void setsegundoApellido(String segundoApellido) { this.segundoApellido = segundoApellido; }
 
     /**
      * <b>Objetivo:</b> Modificar el día de nacimiento.<br>
@@ -371,7 +379,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo diaNac se actualiza con el nuevo valor.
      * @param diaNac, es el nuevo día de nacimiento.
      */
-    public void setDiaNac(int diaNac) { this.diaNac = diaNac; }
+    public void setdiaNac(int diaNac) { this.diaNac = diaNac; }
 
     /**
      * <b>Objetivo:</b> Modificar el mes de nacimiento.<br>
@@ -379,7 +387,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo mesNac se actualiza con el nuevo valor.
      * @param mesNac, es el nuevo mes de nacimiento.
      */
-    public void setMesNac(int mesNac) { this.mesNac = mesNac; }
+    public void setmesNac(int mesNac) { this.mesNac = mesNac; }
 
     /**
      * <b>Objetivo:</b> Modificar el año de nacimiento.<br>
@@ -387,7 +395,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo anioNac se actualiza con el nuevo valor.
      * @param anioNac, es el nuevo año de nacimiento.
      */
-    public void setAnioNac(int anioNac) { this.anioNac = anioNac; }
+    public void setanioNac(int anioNac) { this.anioNac = anioNac; }
 
     /**
      * <b>Objetivo:</b> Modificar el género.<br>
@@ -395,7 +403,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo genero se actualiza con el nuevo valor.
      * @param genero, es el nuevo género.
      */
-    public void setGenero(String genero) { this.genero = genero; }
+    public void setgenero(String genero) { this.genero = genero; }
 
     /**
      * <b>Objetivo:</b> Modificar el estado civil.<br>
@@ -403,7 +411,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo estadoCivil se actualiza con el nuevo valor.
      * @param estadoCivil, es el nuevo estado civil.
      */
-    public void setEstadoCivil(String estadoCivil) { this.estadoCivil = estadoCivil; }
+    public void setestadoCivil(String estadoCivil) { this.estadoCivil = estadoCivil; }
 
     /**
      * <b>Objetivo:</b> Modificar el número de celular.<br>
@@ -411,7 +419,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo numCelular se actualiza con el nuevo valor.
      * @param numCelular, es el nuevo número de celular.
      */
-    public void setNumCelular(String numCelular) { this.numCelular = numCelular; }
+    public void setnumCelular(String numCelular) { this.numCelular = numCelular; }
 
     /**
      * <b>Objetivo:</b> Modificar la nacionalidad.<br>
@@ -419,7 +427,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo nacionalidad se actualiza con el nuevo valor.
      * @param nacionalidad, es la nueva nacionalidad.
      */
-    public void setNacionalidad(String nacionalidad) { this.nacionalidad = nacionalidad; }
+    public void setnacionalidad(String nacionalidad) { this.nacionalidad = nacionalidad; }
 
     /**
      * <b>Objetivo:</b> Modificar la dirección.<br>
@@ -427,7 +435,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo direccion se actualiza con el nuevo valor.
      * @param direccion, es la nueva dirección.
      */
-    public void setDireccion(String direccion) { this.direccion = direccion; }
+    public void setdireccion(String direccion) { this.direccion = direccion; }
 
     /**
      * <b>Objetivo:</b> Modificar el correo electrónico.<br>
@@ -435,7 +443,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo correo se actualiza con el nuevo valor.
      * @param correo, es el nuevo correo electrónico.
      */
-    public void setCorreo(String correo) { this.correo = correo; }
+    public void setcorreo(String correo) { this.correo = correo; }
 
     /**
      * <b>Objetivo:</b> Modificar el tipo de sangre.<br>
@@ -443,7 +451,7 @@ public class Persona {
      * <b>Poscondición:</b> El atributo tipoSangre se actualiza con el nuevo valor.
      * @param tipoSangre, es el nuevo tipo de sangre.
      */
-    public void setTipoSangre(String tipoSangre) { this.tipoSangre = tipoSangre; }
+    public void settipoSangre(String tipoSangre) { this.tipoSangre = tipoSangre; }
 
     /**
      * <b>Objetivo:</b> Modificar el factor RH.<br>
@@ -451,6 +459,5 @@ public class Persona {
      * <b>Poscondición:</b> El atributo rh se actualiza con el nuevo valor.
      * @param rh, es el nuevo factor RH.
      */
-    public void setRh(String rh) { this.rh = rh; }
+    public void setrh(String rh) { this.rh = rh; }
 }
-
