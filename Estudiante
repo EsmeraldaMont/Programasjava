@@ -6,8 +6,14 @@ public class Estudiante extends Persona {
 
  // Constructor
 
+   
+    public Estudiante(String carrera, double promedio, int semestre, String tipoDoc, String primerNombre, String primerApellido, String segundoApellido) {
+    super (tipoDoc,primerNombre,primerApellido);
 
-
+    this.carrera = carrera;
+    this.promedio = promedio;
+    this.semestre = semestre;
+    }
  
     public Estudiante(String carrera, double promedio, int semestre, String tipoDoc, int numeroDoc, String primerNombre, String segundoNombre,
       String primerApellido, String segundoApellido, int diaNac, int mesNac, int anioNac, String genero, String estadoCivil, String numCelular,
@@ -23,7 +29,7 @@ public class Estudiante extends Persona {
 
 // ANALIZADORES (GETTERS)
 
-    public String getcarrera() { Sreturn carrera;}
+    public String getcarrera() { return carrera;}
 
     public double getpromedio() { return promedio;}
 
@@ -39,14 +45,14 @@ public class Estudiante extends Persona {
 
      public void setsemestre(int semestre) { this.semestre = semestre; }
 
-
+@Override
 public String toString() {
         String s = "";
         s += "Carrera: " + this.carrera + "\n";
-        s += "Promedio: " + this.numeroDoc + "\n";
+        s += "Promedio: " + this.promedio + "\n";
+        s += "Semestre " + this.semestre + "\n";
         s += "Semestre " + this.semestre + "\n";
         return s;
 }
 }
-
 
