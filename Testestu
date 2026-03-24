@@ -3,13 +3,29 @@ public class TestEstudiante {
 public static void main(String[] args) {
 
 
-        
+Estudiante e1= new Estudiante("Sistemas", 4.2, 6, "CC","Pedro","Escamoso","Perez");
 
-        Estudiante e1 = new Estudiante ("sistemas", 1.0, 4 , "CC", 25154321, "Carlos", "Antonio", "Guzman", "Perez",26, 06, 1999, "nobinario", "soltero",321578931,"Chileno","Calle 1 Soacha", "Cguzman@gmail.com","o","positivo");
+
+ System.out.println("Datos del Estudiante\n");
+
+ System.out.println("Los datos del estudiante 1 son:\n" + e1.toString() + "\n");
+
+
+  // Modificar estudiate 1 usando setters
+ System.out.println("Modificar datos con setters\n");
+
+        
+        e1.setcarrera("Mecanica");
+        e1.setpromedio(2.6);
+        e1.setsemestre(7);
+        e1.setprimerNombre("Paquita");
+        e1.setprimerApellido("Barrio");
+
+ System.out.println("Luego de utilizar los setters con Estudiante 1:\n");
+ System.out.println("Los datos de la persona 1 son:\n" + e1.toString() + "\n");
 }        
-  
+}
         
-
 
 
 
