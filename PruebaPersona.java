@@ -52,21 +52,21 @@ public class TestPersona {
         
         p1.setTipoDoc("CC");
         p1.setNumeroDoc(98765432);
-        p1.setPrimerNombre("Carlos");
-        p1.setSegundoNombre("Andrés");
-        p1.setPrimerApellido("García");
-        p1.setSegundoApellido("Mendoza");
-        p1.setDiaNac(10);
-        p1.setMesNac(12);
-        p1.setAnioNac(1985);
-        p1.setGenero("Masculino");
-        p1.setEstadoCivil("Casado");
-        p1.setNumCelular("3159876543");
-        p1.setNacionalidad("Colombiana");
-        p1.setDireccion("Carrera 50 #20-30");
-        p1.setCorreo("carlos.garcia@email.com");
-        p1.setTipoSangre("A");
-        p1.setRh("Positivo");
+        p1.setprimerNombre("Carlos");
+        p1.setsegundoNombre("Andrés");
+        p1.setprimerApellido("García");
+        p1.setsegundoApellido("Mendoza");
+        p1.setdiaNac(10);
+        p1.setmesNac(12);
+        p1.setanioNac(1985);
+        p1.setgenero("Masculino");
+        p1.setestadoCivil("Casado");
+        p1.setnumCelular("3159876543");
+        p1.setnacionalidad("Colombiana");
+        p1.setdireccion("Carrera 50 #20-30");
+        p1.setcorreo("carlos.garcia@email.com");
+        p1.settipoSangre("A");
+        p1.setrh("Positivo");
         
         System.out.println("Luego de utilizar los setters con P1:\n");
         System.out.println("Los datos de la persona 1 son:\n" + p1.toString() + "\n");
@@ -74,18 +74,18 @@ public class TestPersona {
         // Modificar persona 2 usando setters
         System.out.println("Modificar persona 2 \n");
         
-        p2.setPrimerNombre("Federico");
-        p2.setSegundoNombre("José");
-        p2.setPrimerApellido("Gómez");
-        p2.setSegundoApellido("Pérez");
-        p2.setDiaNac(25);
-        p2.setMesNac(7);
-        p2.setAnioNac(1992);
-        p2.setGenero("Masculino");
-        p2.setEstadoCivil("Soltero");
-        p2.setNumCelular("3204567890");
-        p2.setNacionalidad("Colombiana");
-        p2.setCorreo("federico.gomez@email.com");
+        p2.setprimerNombre("Federico");
+        p2.setsegundoNombre("José");
+        p2.setprimerApellido("Gómez");
+        p2.setsegundoApellido("Pérez");
+        p2.setdiaNac(25);
+        p2.setmesNac(7);
+        p2.setanioNac(1992);
+        p2.setgenero("Masculino");
+        p2.setestadoCivil("Soltero");
+        p2.setnumCelular("3204567890");
+        p2.setnacionalidad("Colombiana");
+        p2.setcorreo("federico.gomez@email.com");
         
         System.out.println("Luego de utilizar los setters con P2:\n");
         System.out.println("Los datos de la persona 2 son:\n" + p2.toString() + "\n");
@@ -93,39 +93,39 @@ public class TestPersona {
         // Modificar persona 3 usando setters
         System.out.println(" Modificar persona 3 \n");
         
-        p3.setSegundoNombre("Fernanda");
-        p3.setSegundoApellido("Martínez");
-        p3.setDiaNac(3);
-        p3.setMesNac(9);
-        p3.setAnioNac(1995);
-        p3.setGenero("Femenino");
-        p3.setEstadoCivil("Casada");
-        p3.setNumCelular("3019876543");
-        p3.setNacionalidad("Colombiana");
-        p3.setDireccion("Avenida 68 #45-12");
-        p3.setCorreo("maria.lopez@email.com");
-        p3.setTipoSangre("B");
-        p3.setRh("Negativo");
+        p3.setsegundoNombre("Fernanda");
+        p3.setsegundoApellido("Martínez");
+        p3.setdiaNac(3);
+        p3.setmesNac(9);
+        p3.setanioNac(1995);
+        p3.setgenero("Femenino");
+        p3.setestadoCivil("Casada");
+        p3.setnumCelular("3019876543");
+        p3.setnacionalidad("Colombiana");
+        p3.setdireccion("Avenida 68 #45-12");
+        p3.setcorreo("maria.lopez@email.com");
+        p3.settipoSangre("B");
+        p3.setrh("Negativo");
         
         System.out.println("Luego de utilizar los setters con P3:\n");
         System.out.println("Los datos de la persona 3 son:\n" + p3.toString() + "\n");
         
         // Probar getters individuales con persona 4
         System.out.println("Modificar persona 4\n");
-        System.out.println("Tipo Documento: " + p4.getTipoDoc());
-        System.out.println("Número Documento: " + p4.getNumeroDoc());
-        System.out.println("Primer Nombre: " + p4.getPrimerNombre());
-        System.out.println("Segundo Nombre: " + p4.getSegundoNombre());
-        System.out.println("Primer Apellido: " + p4.getPrimerApellido());
-        System.out.println("Segundo Apellido: " + p4.getSegundoApellido());
-        System.out.println("Fecha Nacimiento: " + p4.getDiaNac() + "/" + p4.getMesNac() + "/" + p4.getAnioNac());
-        System.out.println("Género: " + p4.getGenero());
-        System.out.println("Estado Civil: " + p4.getEstadoCivil());
-        System.out.println("Número Celular: " + p4.getNumCelular());
-        System.out.println("Nacionalidad: " + p4.getNacionalidad());
-        System.out.println("Dirección: " + p4.getDireccion());
-        System.out.println("Correo: " + p4.getCorreo());
-        System.out.println("Tipo de Sangre: " + p4.getTipoSangre());
+        System.out.println("Tipo Documento: " + p4.gettipoDoc());
+        System.out.println("Número Documento: " + p4.getnumeroDoc());
+        System.out.println("Primer Nombre: " + p4.getprimerNombre());
+        System.out.println("Segundo Nombre: " + p4.getsegundoNombre());
+        System.out.println("Primer Apellido: " + p4.getprimerApellido());
+        System.out.println("Segundo Apellido: " + p4.getsegundoApellido());
+        System.out.println("Fecha Nacimiento: " + p4.getdiaNac() + "/" + p4.getmesNac() + "/" + p4.getanioNac());
+        System.out.println("Género: " + p4.getgenero());
+        System.out.println("Estado Civil: " + p4.getestadoCivil());
+        System.out.println("Número Celular: " + p4.getnumCelular());
+        System.out.println("Nacionalidad: " + p4.getnacionalidad());
+        System.out.println("Dirección: " + p4.getdireccion());
+        System.out.println("Correo: " + p4.getcorreo());
+        System.out.println("Tipo de Sangre: " + p4.gettipoSangre());
         System.out.println("RH: " + p4.getRh());
         
     } //Fin del metodo principal
