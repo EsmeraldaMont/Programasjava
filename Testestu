@@ -1,31 +1,46 @@
 public class TestEstudiante {
-
-public static void main(String[] args) {
-
-
-Estudiante e1= new Estudiante("Sistemas", 4.2, 6, "CC","Pedro","Escamoso","Perez");
-
-
- System.out.println("Datos del Estudiante\n");
-
- System.out.println("Los datos del estudiante 1 son:\n" + e1.toString() + "\n");
-
-
-  // Modificar estudiate 1 usando setters
- System.out.println("Modificar datos con setters\n");
-
+    
+    public static void main(String[] args) {
         
+        // Crear estudiante 1
+        Estudiante e1 = new Estudiante("Sistemas", 4.2, 6, "CC", "Shakira", "Lopez", "Cruz");
+
+        System.out.println("Datos del Estudiante\n");
+
+        System.out.println("Los datos del estudiante 1 son:\n" + e1.toString() + "\n");
+
+        // Modificar estudiante 1 usando setters
+        System.out.println("Modificar datos con setters\n");
+
         e1.setcarrera("Mecanica");
         e1.setpromedio(2.6);
         e1.setsemestre(7);
+        // Estos métodos se heredan de Persona.java
         e1.setprimerNombre("Paquita");
         e1.setprimerApellido("Barrio");
 
- System.out.println("Luego de utilizar los setters con Estudiante 1:\n");
- System.out.println("Los datos de la persona 1 son:\n" + e1.toString() + "\n");
-}        
+        System.out.println("Luego de utilizar los setters con Estudiante 1:\n");
+        System.out.println("Los datos de la persona 1 son:\n" + e1.toString() + "\n");
+
+        // Crear estudiante 2
+        // Este usa el constructor completo 
+        Estudiante e2 = new Estudiante(
+            "Medicina", 3.8, 6, "CC", 32165498, "Jorge", "Antonio",
+            "Curioso", "Gonzalez", 31, 12, 1994, "Masculino", "Casado", 
+            "321578964", "chileno", "Calle 37", "jorgecurioso@com.mx", "A", "Positivo"
+        );
+        
+        System.out.println("Los datos del estudiante 2 son:\n" + e2.toString() + "\n");
+    }
 }
         
+
+
+
+
+
+
+
 
 
 
