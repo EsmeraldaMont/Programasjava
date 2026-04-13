@@ -1,0 +1,118 @@
+import java.util.Scanner;
+
+public class Figuras {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("CALCULO DE AREAS\n");
+        
+        // CUADRADO
+        System.out.println("CUADRADO:");
+
+        System.out.print("Ingrese el lado del cuadrado:\t");
+        int lado = sc.nextInt();
+        int areaCuadrado = lado * lado;
+        System.out.println("Area del cuadrado:\t" + areaCuadrado + "\n");
+
+        // RECTANGULO
+         System.out.println ("RECTANGULO:");
+        System.out.print("Ingrese la base del rectangulo:\t");
+        int base = sc.nextInt();
+        System.out.print("Ingrese la altura del rectangulo:\t");
+        int altura = sc.nextInt();
+        int areaRectangulo = base * altura;
+        System.out.println("Area del rectangulo:\t" + areaRectangulo + "\n");
+
+        // TRIANGULO
+        System.out.println ("TRIANGULO:");
+        System.out.print("Ingrese la base del triangulo:\t");
+        int baseT = sc.nextInt();
+        System.out.print("Ingrese la altura del triangulo:\t");
+        int alturaT = sc.nextInt();
+        double areaTriangulo = (baseT * alturaT) / 2.0;
+        System.out.println("Area del triangulo:\t" + areaTriangulo + "\n");
+
+        // TRAPECIO
+        System.out.println ("TRAPECIO:");
+        System.out.print("Ingrese base mayor:\t");
+        int baseMayor = sc.nextInt();
+        System.out.print("Ingrese base menor:\t");
+        int baseMenor = sc.nextInt();
+        System.out.print("Ingrese altura:\t");
+        int alturaTrap = sc.nextInt();
+        double areaTrapecio = ((baseMayor + baseMenor) * alturaTrap) / 2.0;
+        System.out.println("Area del trapecio:\t" + areaTrapecio + "\n");
+
+        // ROMBO
+        System.out.println ("ROMBO:");
+        System.out.print("Ingrese diagonal mayor:\t");
+        int dMayor = sc.nextInt();
+        System.out.print("Ingrese diagonal menor:\t");
+        int dMenor = sc.nextInt();
+        double areaRombo = (dMayor * dMenor) / 2.0;
+        System.out.println("Area del rombo:\t\t" + areaRombo + "\n");
+
+        // CIRCUNFERENCIA
+        System.out.println ("CIRCUNFERENCIA:");
+        System.out.print("Ingrese el radio:\t");
+        int radio = sc.nextInt();
+        double areaCirc = Math.PI * radio * radio;
+        System.out.println("Area circunferencia:\t" + areaCirc + "\n");
+
+
+ System.out.println("CALCULO DE VOLUMENES\n");
+
+        // CUBO
+        System.out.println ("CUBO:");
+        System.out.print("Ingrese el lado del cubo:\t");
+        int ladoCubo = sc.nextInt();
+        int volumenCubo = ladoCubo * ladoCubo * ladoCubo;
+        System.out.println("Volumen del cubo:\t" + volumenCubo + "\n");
+
+        // PRISMA RECTANGULAR
+        System.out.println ("PRISMA RECTANGULAR:");
+        System.out.print("Ingrese el largo:\t");
+        int largo = sc.nextInt();
+        System.out.print("Ingrese el ancho:\t");
+        int ancho = sc.nextInt();
+        System.out.print("Ingrese la altura:\t");
+        int alturaPrisma = sc.nextInt();
+        int volumenPrisma = largo * ancho * alturaPrisma;
+        System.out.println("Volumen prisma rectangular:\t" + volumenPrisma + "\n");
+
+        // CILINDRO
+        System.out.println ("CILINDRO:");
+        System.out.print("Ingrese el radio:\t");
+        int radioCilindro = sc.nextInt();
+        System.out.print("Ingrese la altura:\t");
+        int alturaCil = sc.nextInt();
+        double volumenCilindro = Math.PI * radioCilindro * radioCilindro * alturaCil;
+        System.out.println("Volumen cilindro:\t" + volumenCilindro + "\n");
+
+        // CONO
+        System.out.println ("CONO:");
+        System.out.print("Ingrese el radio:\t");
+        int radioCono = sc.nextInt();
+        System.out.print("Ingrese la altura:\t");
+        int alturaCono = sc.nextInt();
+        double volumenCono = (Math.PI * radioCono * radioCono * alturaCono) / 3.0;
+        System.out.println("Volumen cono:\t\t" + volumenCono + "\n");
+
+        // ESFERA
+        System.out.println ("ESFERA:");
+        System.out.print("Ingrese el radio:\t");
+        int radioEsf = sc.nextInt();
+        double volumenEsfera = (4.0 / 3.0) * Math.PI * Math.pow(radioEsf, 3);
+        System.out.println("Volumen esfera:\t\t" + volumenEsfera + "\n");
+
+
+        System.out.println("FIN DEL PROGRAMA");
+
+        sc.close();
+    }
+
+
+
+    
+}
