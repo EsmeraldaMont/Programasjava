@@ -1,0 +1,24 @@
+public class Entero {
+    public static void main(String[] args) {
+        
+        int entero;
+        int suma = 0;
+
+        do {
+            entero = Teclado.leerInt("Ingrese un número positivo:\n");
+
+            if(entero <= 0) {
+                System.out.println("Número inválido, intente nuevamente\n");
+            }
+
+        } while(entero <= 0);
+
+        for(int i = 1; i <= entero; i++) {
+            suma = suma + i;
+        }
+
+        System.out.println("La suma es: " + suma);
+    }
+}
+
+
